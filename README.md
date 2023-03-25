@@ -1,13 +1,19 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# Simple ERC20 Smart Contract
 
-Try running some of the following tasks:
+이 프로그램은 ERC20 규정을 따르는 전송가능한 토큰을 구현하는 스마트 컨트랙트를 생성하는 코드이다.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+이 컨트랙트는 아래의 규칙을 따른다.
+* 토큰의 전체 공급량은 고정되어 있고 변경불가능하다.
+* 전체 공급량은 컨트랙트 배포 주소에 배정된다.
+* 토큰은 누구에게나 주어질 수 있다.
+* 토큰은 적어도 하나의 토큰을 가진 누구나 전송가능하다.
+* 토큰은 쪼개지지 않으며 토큰을 정수 단위로 전송가능하다.
+
+- ERC20은 대체가능한 토큰의 표준으로 설정되었으며 각 토큰은 다른 토큰과 동일한 특성을 가진다.
+이 프로그램은 ERC20 표준과 같은 샘플 토큰을 빌드하기에 적합한 'the OpenZeppelin framework'를 사용한다.
+이 framework는 안전하게 스마트 컨트랙트를 생성하는 라이브러리이다.
+
+
+
+출처 : https://docs.allthatnode.com/tutorials/a-simple-erc20-smart-contract
